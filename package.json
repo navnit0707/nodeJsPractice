@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "global.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navnit0707/nodeJsPractice.git"
+  },
+  "author": "navnit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navnit0707/nodeJsPractice/issues"
+  },
+  "homepage": "https://github.com/navnit0707/nodeJsPractice#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
+}
