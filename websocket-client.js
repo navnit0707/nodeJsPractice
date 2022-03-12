@@ -1,16 +1,21 @@
 const WS = new WebSocket('ws://localhost:3232');
 
 WS.onmessage=(payload)=>{
-    console.log(payload.data);
+     displayMessage(payload.data);
 };
 
 WS.onopen = ()=>{
     displayTitle('connected to server');
-    console.log('Connection is open');
+    
 };
-
 function displayTitle(title){
     document.querySelector('h1').innerHTML = title;
+}
+function displayMessage(message){
+    let h1 = document.createElement('h1');
+
+    h1.innerHTML = message;
+    document.querySelector('div.message').appendChild(h1);
 }
 
 WS.onclose =()=>{
