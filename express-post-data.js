@@ -5,7 +5,7 @@ let app = express();
 
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({extended:false})); //to know more
 
 app.use('/assets',express.static(__dirname + '/public'));
 
